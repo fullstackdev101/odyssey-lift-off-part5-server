@@ -13,7 +13,13 @@ async function startApolloServer(typeDefs, resolvers) {
       };
     },
   });
+<<<<<<< HEAD
   const { url, port } = await server.listen({ port: process.env.PORT || 4000 });
+=======
+
+  const { url, port } = await server.listen();
+  
+>>>>>>> 15579e878edf1b13a164aa8609166f652eed07a7
   console.log(`
       🚀  Server is running
       🔉  Listening on port ${port}
